@@ -1,18 +1,18 @@
-FLAME & BUN — STATIC WEBSITE
+FLAME & BUN — STANDALONE SIX-PAGE WEBSITE
 
-This package contains five standalone pages built with HTML, CSS and JavaScript only.
-No React, frameworks, package manager or build step is required.
+Extract the whole ZIP, then open index.html in a browser.
+No installation, React, npm, build step or internet connection is required.
+Keep images/, fonts/ and the shared CSS/JS files alongside the HTML pages.
 
-FILES
-- index.html — Home
-- menu.html — Filterable menu
-- about.html — Our story
-- offers.html — Deals and bundles
-- contact.html — Contact form and location
-- styles.css — All styles
-- script.js — Mobile menu, filters, cart counter and forms
-- assets/ — Local food photography
+PAGES
+Home: index.html
+Menu: menu.html
+About Us: about.html
+Shop: shop.html
+Specials: specials.html
+Contact: contact.html
 
-HOW TO USE
-Open index.html directly in a browser, or upload the entire folder to any static web host.
-An internet connection is only used to load the Bebas Neue and DM Sans fonts from Google Fonts.
+All images and fonts are bundled. Menu search, category filters and a sample cart are included.
+The cart is a demo and resets when you open another page; checkout is not connected.
+Contact details are not supplied. Reference prices and promotional text are sample content.
+The food images are replacements matching the supplied reference screenshots.

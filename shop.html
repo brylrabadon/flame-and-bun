@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu — Flame &amp; Bun</title>
-  <meta name="description" content="Explore burgers, pizza, crispy chicken, biryani, hot dogs and loaded fries." />
-  <meta property="og:title" content="Menu — Flame &amp; Bun" />
-  <meta property="og:description" content="Explore burgers, pizza, crispy chicken, biryani, hot dogs and loaded fries." />
+  <title>Shop — Flame &amp; Bun</title>
+  <meta name="description" content="Discover Flame &amp; Bun's crispy chicken, beef burger and pizza favorites." />
+  <meta property="og:title" content="Shop — Flame &amp; Bun" />
+  <meta property="og:description" content="Discover Flame &amp; Bun's crispy chicken, beef burger and pizza favorites." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
 </head>
-<body data-page="menu">
+<body data-page="shop">
 
   <!-- SVG sprite -->
   <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
@@ -62,9 +62,9 @@
 
       <nav class="nav" id="navigation" aria-label="Main navigation">
         <a href="index.html">HOME</a>
-        <a href="menu.html" class="active" aria-current="page">MENU</a>
+        <a href="menu.html">MENU</a>
         <a href="about.html">ABOUT</a>
-        <a href="shop.html">SHOP</a>
+        <a href="shop.html" class="active" aria-current="page">SHOP</a>
         <a href="specials.html">SPECIALS</a>
         <a href="contact.html">CONTACT</a>
       </nav>
@@ -95,47 +95,44 @@
 
   <main>
 
-    <!-- Categories -->
-    <section class="categories" aria-label="Menu categories">
-      <button class="category" data-category="hotdogs">
-        <img src="images/hotdog.png" alt="Loaded hot dog" width="145" height="105" />
-        <strong>HOT DOGS</strong>
-        <small>A proper classic</small>
-      </button>
-      <button class="category" data-category="burgers">
-        <img src="images/burger.png" alt="Double beef burger" width="145" height="105" />
-        <strong>BURGERS</strong>
-        <small>Flame-grilled perfection</small>
-      </button>
-      <button class="category" data-category="chicken">
-        <img src="images/chicken.png" alt="Golden fried chicken" width="145" height="105" />
-        <strong>CRISPY CHICKEN</strong>
-        <small>Crunch into happiness</small>
-      </button>
-      <button class="category" data-category="biryani">
-        <img src="images/biryani.png" alt="Chicken biryani" width="145" height="105" />
-        <strong>BIRYANI</strong>
-        <small>A bowl full of flavor</small>
-      </button>
-      <button class="category" data-category="fries">
-        <img src="images/fries.png" alt="Cheesy loaded fries" width="145" height="105" />
-        <strong>LOADED FRIES</strong>
-        <small>Go all in</small>
-      </button>
-      <button class="category" data-category="pizza">
-        <img src="images/pizza.png" alt="Pepperoni pizza" width="145" height="105" />
-        <strong>PIZZA</strong>
-        <small>Love at first slice</small>
-      </button>
+    <!-- Deals -->
+    <section class="deals" id="deals" aria-label="Our favorite meals">
+      <article class="deal">
+        <div class="eyebrow">A LITTLE CRUNCH. A LOT OF<br />FLAVOR.</div>
+        <h3>CRISPY<br />CHICKEN<br />MEALS</h3>
+        <div class="deal-price">$10.99</div>
+        <button class="button button-light" data-add="chicken">ORDER NOW <span>↗</span></button>
+        <div class="deal-image">
+          <img src="images/chicken.png" alt="Crispy chicken meal" width="512" height="512" loading="lazy" />
+        </div>
+      </article>
+      <article class="deal">
+        <div class="eyebrow">A LITTLE CRAVING. A LOT OF<br />FLAVOR.</div>
+        <h3>BIG BOLD<br />BEEF BURGER</h3>
+        <div class="deal-price">$12.99</div>
+        <button class="button button-light" data-add="burger">ORDER NOW <span>↗</span></button>
+        <div class="deal-image">
+          <img src="images/burger.png" alt="Big bold beef burger" width="512" height="512" loading="lazy" />
+        </div>
+      </article>
+      <article class="deal">
+        <div class="eyebrow">A LITTLE CRAVING. A LOT OF<br />FLAVOR.</div>
+        <h3>CHEESY.<br />CRISPY. PIZZA.</h3>
+        <div class="deal-price">$16.99</div>
+        <button class="button button-light" data-add="pizza">ORDER NOW <span>↗</span></button>
+        <div class="deal-image">
+          <img src="images/pizza.png" alt="Cheesy pepperoni pizza" width="512" height="512" loading="lazy" />
+        </div>
+      </article>
     </section>
 
-    <!-- Full menu grid -->
+    <!-- All dishes -->
     <section class="menu-section" id="menu">
       <div class="outline-title" aria-hidden="true">POPULAR DISHES · POPULAR DISHES</div>
       <div class="container">
         <div class="section-heading">
           <div class="eyebrow">YOUR CRAVINGS, COVERED</div>
-          <h1 class="page-heading">BEST SELLING DISHES</h1>
+          <h1 class="page-heading">FIND YOUR NEXT FAVORITE</h1>
           <p>Fresh favorites. Big flavors. Never a wrong choice.</p>
         </div>
         <div class="dish-grid" id="dish-grid" data-all="true"></div>
